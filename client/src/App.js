@@ -11,7 +11,7 @@ function App() {
   const [userId, setUserId] = useState(null);
 
   useEffect(() => {
-    setSocket(io("http://localhost:4000"));
+    setSocket(io("https://chat-app-server2.vercel.app"));
     const _userId = Cookies.getItem("userId");
     if (_userId) setUserId(_userId);
   }, []);
