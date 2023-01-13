@@ -19,7 +19,7 @@ const PORT = process.env.PORT;
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: ["https://chat-gab3qvzw4-ayush1430.vercel.app/"],
+    origin: ["https://chat-app-neon-zeta.vercel.app"],
   },
 });
 
