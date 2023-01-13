@@ -19,7 +19,7 @@ export default function Header({ socket, userId, setUserId }) {
 
   useEffect(() => {
     async function fetchRooms() {
-      const res = await fetch("http://localhost:4000/rooms");
+      const res = await fetch("https://chat-app-server2.vercel.app/rooms");
       const { rooms } = await res.json();
       setRooms(rooms);
     }
